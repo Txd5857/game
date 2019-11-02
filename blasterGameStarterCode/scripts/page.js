@@ -256,6 +256,7 @@ function createAsteroid() {
   // Make the asteroids fall towards the bottom
   setInterval( function() {
     curAsteroid.css('top', parseInt(curAsteroid.css('top'))+ASTEROID_SPEED);
+    console.log("bet");
     // Check to see if the asteroid has left the game/viewing window
     if (parseInt(curAsteroid.css('top')) > (gwhGame.height() - curAsteroid.height())) {
       curAsteroid.remove();
@@ -340,9 +341,18 @@ function moveShip(arrow) {
     button.onclick = function(){
       $("#tt").html("Close Setting Panel");
 
-
       console.log("pretty pretty please");
     }
+    button.addEventListener("click",function(){
+      console.log("no");
+      $("#form").show();
+
+    });
+    button.addEventListener("click",function(){
+      console.log("yes");
+      $("#form").hide();
+
+    });
     $("#test").append(button);
 
     
