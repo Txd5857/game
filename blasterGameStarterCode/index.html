@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Div Blaster</title>
+	<!-- JS -->
+	<script type="text/javascript" src='scripts/jquery.min.js'></script>
+	<script type="text/javascript" src='scripts/page.js'></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+    
+    <div class='game-window'>
+        <!-- <div class="overlay" id="over">     
+            <div style="text-align:center; float:left; color: white; margin-left: 20px;">
+                <h3>Game Details !</h3>
+                <hr>
+                <br>
+                <p>There is 2D Ship movement. Avoid colliding with the Asteriods.</p>
+                <p>There are "Fire-able rockets" that can destroy the asteriods that are spawned</p>
+                <p>Smaller Asteriods == more points</p>
+        
+                <h3> Game Controls</h3>
+                <p> Arrow-Keys: Move Ship</p>
+                <p> Space Bar: Fire Rocket</p>
+                <p> Shift: Spawns additional asteroids</p>
+        
+        
+        
+            </div>
+            <div class="modal"> Press SPACE to Start Game</div>
+          </div> -->
+          <div id="lvlholder" style="float:right; color: white; padding: 5px;"> LEVEL 1</div>
+      <div id='enterprise' class='ship'>
+        <img class='ship-avatar' src='img/fighter.png' height='50px'/> <!--ship img: src='http://i.stack.imgur.com/rsH6n.png'-->
+      </div>
+    </div>
+     
+    <!--Status Window-->
+    <div class='status-window' style='text-align: center'>
+      <h3>Welcome!</h3>
+      <hr>
+      <br>
+      <div style="padding-left:10%; padding-right:10%; width:100%; margin: 0 auto;">
+      <div style="width:25%; float:left;"> 
+      <p>Rockets Launched: </p>
+      <h2 id="rocket-launched">0</h2>
+     </div>
+      <div style="width:30%;  float:left;">
+      
+      <p>Asteriods Destroyed: </p>
+      <h2 id="asteriods-destroyed">0</h2>
+    </div>
+    <div style="width:25%; float:left; clear:right;">
+        <p> Your accuracy: </p>
+        <h2 id="shot-accuracy">0%</h2>
+    </div>
+  </div>
+    <div style="width:100%;    display: block;
+    float: left;">
+      <p>Score:</p>
+      <h1 id='score-box'>0</h1>
+    </div>
+    <div id="test" style="width:100%; display: block; float:left;">
+    </div>
+    <div class="form" id="form" style="width:80%; float:left; margin-top: 10%; margin-left: 10%; border: 1px solid px; height: auto; background-color: green;"> 
+        <form>
+           <p> The average number of asteroids spawned per second. </p>
+          <input type="text" id="input1" name="firstname" value="1">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse">
+          <br><br>
+          <input type="submit" value="Submit">
+        </form> 
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>

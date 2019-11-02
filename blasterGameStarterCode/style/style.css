@@ -1,0 +1,85 @@
+
+/* Main Containers */
+.outer-container {
+  height: 600px;
+  width: 100%;
+}
+.game-window {
+  height: 100%;
+  width: 50%;
+  background: #222;
+  float: left;
+  border: 3px solid black;
+
+}
+.status-window {
+  height: 100%;
+  width:35%;
+  background: #feb;
+  float: left;
+  border: 3px solid black;
+
+}
+
+.splash-window {
+  width: 20%; 
+  height: 100%;
+  background: lightblue;
+  float: left;
+  border: 3px solid black;
+}
+
+/* Game Objects */
+.ship {
+  top: 530px;
+  left: 122px;
+  position: relative;
+  display: inline-block;
+}
+.rocket {
+  position: absolute;
+}
+.rocket img {
+  height: 40px;
+}
+.asteroid {
+  position: absolute;
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:50%;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+  width: 25%;
+  line-height: 200px;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -150px;
+  background-color: lawngreen;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 11;
+}
